@@ -1,0 +1,20 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "Web Crawler with Node.JS",
+  "main": "no",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "crawler",
+    "db_client",
+    "cassandra",
+    "mysql"
+  ],
+  "author": "Bryant",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
