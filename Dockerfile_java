@@ -1,0 +1,12 @@
+FROM openjdk:8
+
+WORKDIR /java_app
+
+ADD . /java_app
+
+RUN \
+    apt-get update && \
+    java -version && \
+    javac -classpath ./lib/jars/required-java-packages.jar:/java_app  YourJavaCode.java
+
+CMD java -classpath ./lib/jars/requiremed-java-packages.jar:/java_app YourJavaCode

@@ -1,0 +1,13 @@
+FROM node:12
+
+WORKDIR /nodejs_app
+
+COPY lib/nodejs/package.json ./
+COPY lib/nodejs/package.json ./nodejs_app
+RUN \
+    npm install && \
+    npm cache clean --force
+
+ADD . /nodejs_app
+
+CMD [ "node", "Your Node.JS JavaScript code file path" ]
